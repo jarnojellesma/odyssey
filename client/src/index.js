@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import PrivateRoute from "./util/PrivateRoute";
+import PrivateRoute from "./components/PrivateRoute";
 import Home from './views/Home';
 import Login from './views/Login';
 
