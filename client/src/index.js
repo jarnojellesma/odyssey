@@ -8,6 +8,7 @@ import LoginComponent from './views/Login';
 import DashboardComponent from "./views/Dashboard";
 import UserConsentComponent from "./views/UserConsent";
 import NotificationSetupComponent from "./views/NotificationSetup";
+import UserConsentTwo from "./views/UserConsent";
 
 ReactDOM.render(
     <BrowserRouter>
@@ -16,6 +17,7 @@ ReactDOM.render(
             <Route path="/dashboard" component={DashboardComponent}/>
             <Route path="/user-consent" component={UserConsentComponent}/>
             <Route path="/notification-setup" component={NotificationSetupComponent}/>
+            <Route path="/uc2" component={UserConsentTwo}/>
             <PrivateRoute path="/private" component={HomeComponent}/>
         </Switch>
     </BrowserRouter>,
