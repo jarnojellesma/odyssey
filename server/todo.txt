@@ -1,0 +1,34 @@
+EdgeClient
+- View where user can change consent
+- View where company can create and remove notification conditions
+- View, dashboard like, where we can see the real-time data of neighborhoods.
+
+
+EdgeServer
+- Neighborhood HTTP web server
+    -
+        Overwrite household concents
+        PUT "/household/<id>/consent"
+        Permissions: Only households have permission to use this endpoint.
+    -
+        Overwrite notification conditions
+        PUT "/conditions"
+        Permissions: Only companies (such as Vattenfall) have permission to use this endpoint.
+    -
+        Smart meter posts the data to this endpoint
+        POST "/household/<id>/data"
+        Permissions: Only smart meters have permission to use this endpoint.
+    -
+        Get any current notifications (if any) for a household
+        GET "/household/<id>/notifications"
+        Permissions: Only households have permission to use this endpoint.
+    -
+        Get real-time data for a household
+        GET "/household/<id>/data"
+        Permissions: Only households have permission to use this endpoint.
+    -
+        Get the aggregated data of the whole neighborhood
+        GET "/data?type='aggregate'"
+        Permissions: Only companies (such as Vattenfall) have permission to use this endpoint.
+
+- Random data generator for n households
