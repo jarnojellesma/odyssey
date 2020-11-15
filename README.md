@@ -79,3 +79,21 @@ Anonymization is provided through
 - Converting the dataset by applying generalization, suppression and adding noise to the dataset in order to maintain utility but prevent identification of individual households.
 
 Methods used to identify the degree of anonymization are K-Anonimity, L-Diversity, T-Closeness and Differential Privacy.
+
+## Real-Time Data Retrieval
+Data can be retrieved by means of subscription or polling. The difference is that the subscription model is a pushing mechanism, meaning that the Edge pushes the data to the external party's http API endpoint. The polling model means that the external party pulls the data by calling the API endpoint of the Edge server.
+
+**Create a subscription:**
+
+POST /data/subscribe
+```
+{
+    "endpoint": "https://energycompany/api/energy-data",
+    "interval": 5
+}
+```
+
+**Pulling the data:**
+
+GET /data
+
