@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5dda57a6-d349-4db0-9f41-a0f43eed4ab1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/PrivateRoute.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/util/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Dashboard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Login.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/NotificationSetup.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/UserConsent.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/edge/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/edge/aggregator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/edge/anonimizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/edge/conditions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/edge/consents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/edge/generator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/edge/notifications.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/edge/storage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/resources/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/runtime.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/auth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/const.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/repositories.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/todo.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="75df7908-e749-4344-85c0-a3e567051e10" />
+  <component name="ProjectId" id="1kKFYCfrRU2aHXEr3GZx3UGYrn0" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5dda57a6-d349-4db0-9f41-a0f43eed4ab1" name="Default Changelist" comment="" />
+      <created>1605441424858</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605441424858</updated>
+      <workItem from="1605441426389" duration="349000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="721" y="445" width="540" height="223" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1605441469393">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="721" y="445" width="540" height="223" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1605441469393" />
+  </component>
+</project>
