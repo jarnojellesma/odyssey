@@ -73,3 +73,9 @@ that they won't run longer than a given timeout. If the function is taking too l
 
 ## Anonymization
 
+Anonymization is provided through
+- Providing external parties to define their own custom functions to operate on customer data without the customer data being shared with the external party.
+- Aggregating household-level data to neighborhood-level data
+- Converting the dataset by applying generalization, suppression and adding noise to the dataset in order to maintain utility but prevent identification of individual households.
+
+Methods used to identify the degree of anonymization are K-Anonimity, L-Diversity, T-Closeness and Differential Privacy.
