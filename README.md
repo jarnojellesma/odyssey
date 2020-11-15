@@ -1,5 +1,6 @@
-
 # Edge
+
+A smart meter data protocol using edge computing to enable individual user nudging, customer privacy, improved data quality and reduced network congestion with the aim of moving the energy transition forward.
 
 ## Table of Contents
 
