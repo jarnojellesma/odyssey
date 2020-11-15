@@ -2,7 +2,7 @@
 # Edge
 
 ## Introduction
-Current smart meter data collection and unlocking for stakeholders is centralized (DSOs are the gatekeeper, single point of failure), closed (access for mandated stakeholders only) and has a 24-hr delay. Real-time and higher-quality data and a transparent and inclusive system is needed to unlock new solutions and business models. 
+Current smart meter data collection and unlocking for stakeholders is centralized (DSOs are the gatekeeper, single point of failure), closed (access for mandated stakeholders only) and has a 24-hr delay. Real-time and higher-quality data and a transparent and inclusive system is needed to unlock new solutions and business models. This will help in building new technologies to accelerate the energy transition.
 
 The Powerchainger Edge solves the smart meter data infrastructure challenge by offering a solution that enables organizations to trigger actions based on individual households’ behavior. real-time energy monitoring of communities, reducing network traffic and enabling more companies to use the data, all while preserving the privacy of customers. 
 
@@ -26,3 +26,50 @@ The Edge system is used from different angles as follows:
 - Organizations can subscribe to receiving real-time aggregated data of neighborhoods. The data is aggregated to neighborhood level to maintain the privacy of individual users and reduce network traffic.
 - Organizations have the ability to retrieve the raw data of the whole neighborhood, but only after certain anonymization techniques have been applied to prevent identifying individual households. The degree of anonymization can be changed based on the permissions of the organization. E.g. the DSO might require more precise data compared to a small service provider.
 - Organizations can set their own customized filters in order to choose which kind of data should be received. For example some companies might choose to only receive data when it has been changed to a certain degree in order to reduce network traffic. 
+
+## Triggering
+Triggering actions based on patterns in the input data is key into nudging customers to change their behavior. 
+This can be done by sending recommendations and controlling smart appliances. Examples include asking users to charge their EV because there is a surplus of power production in the neighborhood or turning off the heater when nobody is home.
+
+External parties can implement custom triggers through customized algorithms 
+in a sandboxed environment. The first prototype will support using the Python language for these custom functions.
+The implementation is as follows:
+
+### Creating a trigger
+
+POST /triggers/create
+
+Body:
+```
+    {
+        "parameters": [
+            "neighborhood_power_consumption",
+            "neighborhood_power_production",
+        ],
+        "function": <Base64 Encoding Custom Function>
+        "interval": 36000,
+        "action": {
+            "type": "notification",
+            "content": "There is a surplus of power production in your neighborhood, 
+                        now might be a good time to charge your EV!"
+        }
+    }
+```
+
+Custom function uploaded by external party:
+```
+def condition(neighborhood_power_consumption, neighborhood_power_production):
+    if neighborhood_power_production - neighborhood_power_consumption > 500:
+        return True
+    else:
+        return False
+```
+
+The parameters and action types are predefined by the protocol. The organization can find the options through the API documentation. 
+The idea is that the custom condition developer defines which parameters are required and the protocol determines whether
+the organization has the permission to use these specific parameters. If this is the case, the trigger will be accepted
+and the function will be ran when data from smart meters is pushed into the network. In order to prevent slowing the performance of the system, the triggers are executed asynchronously and are tested
+that they won't run longer than a given timeout. If the function is taking too long, the trigger will not be accepted and the implementer needs to optimize the algorithm. The security of the custom function is provided by running the code in a sandboxed environment, where the output of the function can only ever be a boolean indicating whether the defined action needs to be performed or not.
+
+## Anonymization
+
