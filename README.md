@@ -1,6 +1,15 @@
 
 # Edge
 
+## Table of Contents
+
+* [Introduction](#introduction)
+* [How Does It Work](#how-does-it-work)
+* [Triggering](#triggering)
+* [Anonymization](#anonymization)
+* [Real Time Data Retrieval](#real-time-data-retrieval)
+
+
 ## Introduction
 Current smart meter data collection and unlocking for stakeholders is centralized (DSOs are the gatekeeper, single point of failure), closed (access for mandated stakeholders only) and has a 24-hr delay. Real-time and higher-quality data and a transparent and inclusive system is needed to unlock new solutions and business models. This will help in building new technologies to accelerate the energy transition.
 
