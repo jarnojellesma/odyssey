@@ -92,6 +92,7 @@ Methods used to identify the degree of anonymization are K-Anonimity, L-Diversit
 
 ## Real-Time Data Retrieval
 Data can be retrieved by means of subscription or polling. The difference is that the subscription model is a pushing mechanism, meaning that the Edge pushes the data to the external party's http API endpoint. The polling model means that the external party pulls the data by calling the API endpoint of the Edge server.
+The output data is aggregated so the total power consumption and production of the neighborhood is received. 
 
 **Create a subscription:**
 
@@ -107,3 +108,4 @@ POST /data/subscribe
 
 GET /data
 
+The external party calls the api endpoint and schedules their own interval.
